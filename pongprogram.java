@@ -1,3 +1,8 @@
+//My first swing animation game
+//Using KeyListener, MouseMotionListener
+//Created by BLian
+//Created on Dec 7
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
