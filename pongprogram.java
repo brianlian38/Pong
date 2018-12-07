@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class pongprogram implements ActionListener, KeyListener, MouseMotionListener, MouseListener{
+public class pongprogram implements ActionListener, KeyListener, MouseMotionListener{
 	//Properties
 	JFrame court;
 	pongpanel panel;
@@ -36,21 +36,7 @@ public class pongprogram implements ActionListener, KeyListener, MouseMotionList
 	public void keyTyped(KeyEvent evt){
 		
 	}
-	public void mouseExited(MouseEvent evt){
-		
-	}
-	public void mouseEntered(MouseEvent evt){
-		
-	}
-	public void mouseReleased(MouseEvent evt){
-		
-	}
-	public void mousePressed(MouseEvent evt){
-		
-	}
-	public void mouseClicked(MouseEvent evt){
 	
-	}
 	
 	//This is a overridden method for MouseMotionListener
 	public void mouseMoved(MouseEvent evt){
@@ -68,7 +54,6 @@ public class pongprogram implements ActionListener, KeyListener, MouseMotionList
 		panel = new pongpanel();
 		panel.setLayout(null);
 		panel.setPreferredSize(new Dimension(1280, 740));
-		panel.addMouseListener(this);
 		panel.addMouseMotionListener(this);
 		
 		court.addKeyListener(this);
